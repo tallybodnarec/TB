@@ -34,7 +34,23 @@ li a:hover {
 #navdiv{
 	width: 200px
 	}
-	
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;	
 </style>
 </head>
 
@@ -44,7 +60,10 @@ li a:hover {
 <font face="Arial">
 <ul>
    <li><a href="index.html">Homepage</a></li>
-   <li><a href="keyworth.html">Keyworth (1)</a></li>  
+   <li><a href="keyworth.html">Keyworth (1)</a></li>
+   <form>
+   	<input type="text" name="search" placeholder="Search..."
+   </form>
 </font></ul>
 
 <p><img height="240" width="100%" src="keyworth2.jpg" align="center"></p>
